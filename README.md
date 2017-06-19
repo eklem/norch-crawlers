@@ -17,4 +17,5 @@ Should explain:
   * [ ] Get title + text
   * [ ] Grab a list on the page and push to array
   * [ ] JSON stream
+* [ ] When `request` doesn't do it: Crawl using [phantom.js](Check out phantom.js. The data seems a bit hard to get with just `request`)
 
