@@ -1,21 +1,16 @@
-# crawler-list-item
-Two crawlers crawling lists for URLs and URLs for items.
+A NodeJS crawler library to quick and easy build versatile crawlers.
 
-Based on `request`, `cheerio` and `jsonfile`.
+Will be based on `request`, `cheerio`, `jsonfile` and possibly `Robots parser`.
 
-Should explain:
-* [ ] List page
-* [ ] Item page
+## Functionality to be
 
-... and show how to:
-* [ ] List
-  * [ ] Grab URLs from a (list) page
-  * [ ] Traverse
-  * [ ] Check for last page to traverse
-  * [ ] Check for updates (store last in temp.json)
-* [ ] Item
-  * [ ] Get title + text
-  * [ ] Grab a list on the page and push to array
-  * [ ] JSON stream
-* [ ] When `request` doesn't do it: Crawl using [phantom.js](Check out phantom.js. The data seems a bit hard to get with just `request`)
-
+* [ ] Item crawling
+* [ ] List crawling
+* [ ] Pagination iteration
+* [ ] Define which domain(s) to crawl
+* [ ] Site-crawl - Add found URLs to crawl queue
+* [ ] Follow robots.txt
+* [ ] Check if new content
+* [ ] Check if updated content
+* [ ] Customize crawler header
+* [ ] Crawl with headless browser
