@@ -16,24 +16,28 @@ function crawlUrls(requestUrl, urls) {
     if (error) {
       console.log('error:', error); // Print the error if one occurred 
     }
-    console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received 
-    //console.log('body:', body); // Print the HTML for the Google homepage. 
-    
+    console.log('statusCode:', response && response.statusCode); 
+
+    // Get content and push to array urls[]
     let $ = cheerio.load(body)
     $('div.recipes div.recipe-item .text a').each(function (index, element) {
       urls.push($(element).attr('href'))
     })
 
+    // Figure out nextPage and lastPage URL + number
     let nextPage = $('div.next a.fontQ.brandColor').attr('href')
     let lastPage = $('div.next a.btnLast').attr('href')
     console.log('lastPage: ' + lastPage + '\nnextPage: ' + nextPage)
     let nextPageNumber = nc.regexURL(nextPage, /\d+/)
     let lastPageNumber = nc.regexURL(lastPage, /\d+/)
+
+    // Check if more to crawl
     if (nextPageNumber < lastPageNumber) {
       nc.playNice(2000).then(() => {
         crawlUrls(nextPage, urls)
       });
     }
+
     // Check if last page, write and exit
     if (nextPageNumber === lastPageNumber || nextPageNumber > lastPageNumber) {
       nc.writeAllOnce(urls, file)

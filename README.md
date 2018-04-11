@@ -5,8 +5,9 @@ Will be based on `request`, `cheerio`, `jsonfile` and possibly `Robots parser`.
 ## Functionality to be
 
 * [ ] Item crawling
-* [ ] List crawling
-* [ ] Pagination iteration
+* [x] List crawling
+* [x] Pagination iteration, first version
+* [ ] Pagination iteration, second version
 * [ ] Define which domain(s) to crawl
 * [ ] Site-crawl - Add found URLs to crawl queue
 * [ ] Follow robots.txt
