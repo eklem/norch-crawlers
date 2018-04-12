@@ -1,4 +1,4 @@
-A NodeJS crawler library to quick and easy build versatile crawlers. Just to make working with `request` and `cheerio` a little easier. Just to not have to write all the standard stuff over and over again.
+A NodeJS crawler library to quick and easy build versatile crawlers. Just to make working with `request` and `cheerio` a little easier and to not have to write all the standard stuff over and over again.
 
 
 ## Functions
