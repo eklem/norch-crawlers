@@ -14,7 +14,7 @@ crawlUrls(startURL, urls)
 function crawlUrls(requestUrl, urls) {
   request(requestUrl, nc.headerOptions, function (error, response, body) {
     if (error) {
-      console.log('error:', error); // Print the error if one occurred 
+      console.log('error:', error);
     }
     console.log('statusCode:', response && response.statusCode); 
 
@@ -27,20 +27,18 @@ function crawlUrls(requestUrl, urls) {
     // Figure out nextPage and lastPage URL + number
     let nextPage = $('div.next a.fontQ.brandColor').attr('href')
     let lastPage = $('div.next a.btnLast').attr('href')
-    console.log('lastPage: ' + lastPage + '\nnextPage: ' + nextPage)
-    let nextPageNumber = nc.regexURL(nextPage, /\d+/)
-    let lastPageNumber = nc.regexURL(lastPage, /\d+/)
+    console.log('lastPage: ' + lastPage + '\nnextPage: ' + nextPage + '\nURLs crawled: ' + urls.length)
 
     // Check if more to crawl
-    if (nextPageNumber < lastPageNumber) {
+    if (nextPage !== lastPage) {
       nc.playNice(2000).then(() => {
         crawlUrls(nextPage, urls)
       });
     }
 
     // Check if last page, write and exit
-    if (nextPageNumber === lastPageNumber || nextPageNumber > lastPageNumber) {
-      nc.writeAllOnce(urls, file)
+    if (nextPage === lastPage) {
+      nc.writeJSON(urls, file)
     }
   })
 }

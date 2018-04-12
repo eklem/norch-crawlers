@@ -6,6 +6,7 @@ A NodeJS crawler library to quick and easy build versatile crawlers. Just to mak
 * Play nice with servers: Wait between each request.
 * Get ´next´ and ´last´ URL for pagination scenario. 
 * Write list syncronusly to file at the end
+* Serving header info
 
 ## Examples
 
