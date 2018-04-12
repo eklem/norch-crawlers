@@ -1,6 +1,6 @@
 {
   "name": "norch-crawlers",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A NodeJS crawler library to quick and easy build versatile crawlers.",
   "main": "lib/index.js",
   "scripts": {
