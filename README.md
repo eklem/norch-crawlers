@@ -4,7 +4,8 @@ A NodeJS crawler library to quick and easy build versatile crawlers. Just to mak
 ## Functions
 
 * Play nice with servers: Wait between each request.
-* Get ´next´ and ´last´ URL for pagination scenario. 
+* Regex to extract ´next´ and ´last´ number from URL for pagination scenario
+* Regex to find "next"-url when .class or #id doesn't fully do it
 * Write list syncronusly to file at the end
 * Serving header info
 
@@ -16,7 +17,6 @@ A NodeJS crawler library to quick and easy build versatile crawlers. Just to mak
 ## Functionality to be
 
 * [ ] Item crawling
-* [ ] Pagination iteration, second version
 * [ ] Define which domain(s) to crawl
 * [ ] Site-crawl - Add found URLs to crawl queue
 * [ ] Write content asyncronusly (add to file) throughout crawling.
