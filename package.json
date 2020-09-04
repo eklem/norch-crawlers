@@ -1,6 +1,6 @@
 {
   "name": "norch-crawlers",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "A NodeJS crawler library to quick and easy build versatile crawlers.",
   "main": "lib/index.js",
   "scripts": {
@@ -15,9 +15,14 @@
     "javascript"
   ],
   "dependencies": {
-    "request": "2.81.0",
-    "cheerio": "0.22.0",
-    "jsonfile": "3.0.0"
+    "node-fetch": "2.5.0",
+    "daq-proc": "5.0.0",
+    "jsonfile": "6.0.1",
+    "sitemap-to-array": "6.0.0"
+  },
+  "devDependencies": {
+    "standard": "^14.3.4",
+    "tape": "^5.0.1"
   },
   "author": "Espen Klem",
   "license": "MIT",
