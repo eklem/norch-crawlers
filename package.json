@@ -2,7 +2,7 @@
   "name": "norch-crawlers",
   "version": "0.1.0",
   "description": "A NodeJS crawler library to quick and easy build versatile crawlers.",
-  "main": "lib/index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,8 +17,9 @@
   "dependencies": {
     "node-fetch": "2.5.0",
     "daq-proc": "5.0.0",
-    "jsonfile": "6.0.1",
-    "sitemap-to-array": "6.0.0"
+    "fs-extra": "9.0.1",
+    "fast-xml-parser": "3.17.4",
+    "he": "1.2.0"
   },
   "devDependencies": {
     "standard": "^14.3.4",

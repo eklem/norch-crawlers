@@ -1,15 +1,8 @@
 // Libraries
 const nc = require('./lib/index.js')
 
-nc.crawlSitemapURLs('https://www.oppskrift.no/sitemap.xml', './data/oppskrift.no.URLs.json')
+// Getting URLs
+nc.crawlSitemapURLs('https://www.oppskrift.no/sitemap-recipes.xml', './data/oppskrift.no.URLs.json')
+nc.crawlSitemapURLs('https://www.oppskrift.no/sitemap-ingredients.xml', './data/oppskrift.no.Ingredients.json')
 
-// const smta = require('sitemap-to-array')
-
-// smta('https://www.oppskrift.no/sitemap.xml', stream => {
-//   stream.on('error', error => {
-//     console.error(error)
-//   })
-//   stream.on('data', data => {
-//     console.log(data.toString())
-//   })
-// })
+// Getting content
