@@ -15,11 +15,11 @@
     "javascript"
   ],
   "dependencies": {
+    "node-fetch": "2.6.0",
     "daq-proc": "5.0.0",
     "fast-xml-parser": "3.17.4",
     "fs-extra": "9.0.1",
-    "he": "1.2.0",
-    "node-fetch": "2.5.0"
+    "he": "1.2.0"
   },
   "devDependencies": {
     "standard": "^14.3.4",
