@@ -4,7 +4,7 @@
   "description": "A NodeJS crawler library to quick and easy build versatile crawlers.",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "snyk test"
   },
   "repository": {
     "type": "git",
