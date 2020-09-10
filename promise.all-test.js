@@ -17,7 +17,6 @@ const CrawlSitemap = function (url) {
       console.log('Error in CrawlSitemapUrls: ' + error)
     })
 }
-// console.log(requests)
 
 const CheckIfFileExists = function (filename) {
   // With Promises: https://github.com/jprichardson/node-fs-extra/blob/master/docs/pathExists.md
