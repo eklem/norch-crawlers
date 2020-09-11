@@ -1,27 +1,10 @@
-A NodeJS crawler library to quick and easy build versatile crawlers. Just to make working with `request` and `cheerio` a little easier and to not have to write all the standard stuff over and over again.
+A NodeJS crawler library to quickly and easily build crawlers based on a sitemap.xml file. 
 
 
-## Functions
+## Functions (to be)
 
-* Play nice with servers: Wait between each request.
-* Regex to extract ´next´ and ´last´ number from URL for pagination scenario
-* Regex to find "next"-url when .class or #id doesn't fully do it
-* Write list syncronusly to file at the end
-* Serving header info
-
-## Examples
-
-* List crawling: Crawl paginated lists for URLs
-
-
-## Functionality to be
-
-* [ ] Item crawling
-* [ ] Define which domain(s) to crawl
-* [ ] Site-crawl - Add found URLs to crawl queue
-* [ ] Write content asyncronusly (add to file) throughout crawling.
-* [ ] Follow robots.txt
-* [ ] Check if new content
-* [ ] Check if updated content
-* [ ] Overwrite crawler header and set ´from´-field.
-* [ ] Crawl with headless browser.
+* Crawl sitemap.xml type files, extract URLs and save to a file
+* Figure out re-crawling delta from updated sitemap.xml
+* Crawl arrays of URLs and extract content with cherio css selectors
+* Play nice with servers: Wait between each fetch() on URL crawling
+* Serving header info about crawler and contact info
