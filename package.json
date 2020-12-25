@@ -17,7 +17,7 @@
   "dependencies": {
     "node-fetch": "2.6.1",
     "daq-proc": "5.0.0",
-    "fast-xml-parser": "3.17.4",
+    "fast-xml-parser": "3.17.5",
     "fs-extra": "9.0.1",
     "he": "1.2.0"
   },
